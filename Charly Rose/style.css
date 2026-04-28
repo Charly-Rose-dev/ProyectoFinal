@@ -1,61 +1,67 @@
+/* ================== GENERAL ================== */
 body {
   margin: 0;
   font-family: marcellus, sans-serif;
-
 }
-.logo img {
+
+/* ================== LOGO ================== */
+#logo img {
   height: 160px;  /* tamaño del logo */
-  width: auto;   /* mantiene proporción */
-  /*box-shadow: 0 0 10px rgba(236, 193, 193);*/
-  margin-left: 50px ; espacio alrededor del logo
+  width: auto;    /* mantiene la proporción */
+  margin-left: 50px; /* espacio a la izquierda */
   margin-bottom: 30px;
   padding: 10px;
-  
-
-
 }
-.navbar { /*Clase para la barra de navegación*/
-  display: flex;  /*Hace que los elementos hijos se alineen en fila (horizontal por defecto)*/
-  align-items: center;
-  justify-content: space-between; /*Empuja elementos a los extremos*/
+
+/* ================== NAVBAR ================== */
+.header {
+  display: flex; /* coloca todo en fila */
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* separa logo y menú */
   background: black;
   padding: 20px 30px;
   height: 290px;
 }
+
+/* ================== MENÚ ================== */
 .menu {
-  list-style: none; /*Elimina los puntos de la lista*/
-  display: flex;
-  gap: 60px; /*Crea espacio entre los elementos*/
-  margin-right: 60px ;
+  list-style: none; /* quita los puntos */
+  display: flex; /* pone el menú en fila */
+  gap: 60px; /* espacio entre opciones */
+  margin-right: 60px;
   margin-bottom: 20px;
   padding: 30px;
-  position: left;
   font-size: 32px;
-  font-family: margesh,serif;
+  font-family: marcellus, serif;
 }
+
+/* enlaces del menú */
 .menu a {
-  text-decoration: none;
+  text-decoration: none; /* quita subrayado */
   color: white;
-  position: relative; /*para que ::after se ubique dentro del enlace*/
-  transition: 0.3s;}
-
-  .menu a::after { /*crea un elemento falso despues de cada enlac*/
-  content: ""; /*obliga a que el elemento ::after se muestre */
-  position: absolute; /*permite mover el ::after  libremente y posicionarse respecto al elemnto padre que es (a)*/
-  width: 0%;/*la linea empieza en 0%*/
-  height: 3px; /*Grueso de la linea*/
-  background: rgb(236, 193, 193);
-  left: 0; /* inicia desde el lado izquierdo del texto*/
-  bottom: -5px; /*lo baja, para que quede debajo del texto*/
-  transition: 0.3s; /*duracion de la transcicion */
+  position: relative; /* necesario para el efecto */
+  transition: 0.3s;
 }
 
+/* línea debajo del texto */
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%; /* empieza invisible */
+  height: 3px;
+  background: rgb(236, 193, 193);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+/* animación al pasar el mouse */
 .menu a:hover::after {
-  width: 100%; /*hace que la linea se extienda al 100% del ancho del texto*/
+  width: 100%;
   box-shadow: 0 0 10px rgba(236, 193, 193);
 }
 
-
+/* ================== BUSCADOR ================== */
 .search {
   width: 250px;
   height: 40px;
@@ -66,14 +72,84 @@ body {
   outline: none;
   transition: 0.3s;
 }
+
+/* efecto al hacer clic */
+.search:focus {
+  width: 270px;
+  box-shadow: 0 0 10px rgba(236, 193, 193);
+}
+
+/* contenedor del lado derecho */
 .right {
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-end; /* Alinea a la derecha */
+  flex-direction: column; /* uno debajo del otro */
+  align-items: flex-end; /* alineado a la derecha */
   gap: 12px;
-  margin-left: auto; /* esto la empuja totalmente a la derecha */
+  margin-left: auto;
 }
-.search:focus {
-  width: 230px; /* Aumenta el ancho al hacer clic */
-  box-shadow: 0 0 10px rgba(236, 193, 193);
+
+/* ================== CARRUSEL ================== */
+.carousel {
+  width: 100%;
+  height: 490px;
+  overflow: hidden; /* oculta lo que se sale */
+  position: relative;
+}
+
+/* contenedor que se mueve */
+.slides {
+  display: flex; /* pone las imágenes en fila */
+  transition: transform 0.6s ease; /* animación suave */
+}
+
+/* cada uno de los slides */
+.slide {
+  min-width: 100%; /* ocupa toda la pantalla */
+  flex-shrink: 0; /* evita que se encoja */
+  position: relative; /* para colocar texto encima */
+}
+
+/* imagen del slide */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre sin deformar */
+}
+
+/* capa oscura sobre la imagen */
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* ================== TEXTO SOBRE IMAGEN ================== */
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra */
+  color: white;
+  text-align: center;
+  z-index: 2; /* queda encima de la imagen */
+}
+
+/* título */
+.texto h2 {
+  font-size: 100px;
+  font-family: Bestie, serif;
+  color: rgb(236, 193, 193);
+  margin-bottom: 10px;
+}
+
+/* párrafo */
+.texto p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* efecto de aparición (opcional, pero lo dejo simple) */
+.texto {
+  opacity: 1; /* visible siempre para no complicarlo */
 }
