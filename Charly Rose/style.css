@@ -125,10 +125,11 @@ body {
 }
 
 /* ================== TEXTO SOBRE IMAGEN ================== */
-.texto {
+.texto-carousel {
   position: absolute;
+  right: 0;
   top: 50%;
-  left: 50%;
+  left: 23%;
   transform: translate(-50%, -50%); /* centra */
   color: white;
   text-align: center;
@@ -136,21 +137,24 @@ body {
 }
 
 /* título */
-.texto h2 {
+.texto-carousel h2 {
   font-size: 100px;
-  font-family: Bestie, serif;
-  color: rgb(236, 193, 193);
-  margin-bottom: 10px;
+  font-family: margesh, bold;
+  color: rgb(239, 199, 199);
+  margin-bottom: 30px;
+  margin-left: 90px;
+  text-shadow: 3px 6px 12px rgb(14, 9, 9);
 }
 
 /* párrafo */
-.texto p {
-  font-size: 18px;
+.texto-carousel p {
+  font-size: 38px;
+  font-family: marcellus, serif;
   margin-bottom: 15px;
 }
 
 /* efecto de aparición (opcional, pero lo dejo simple) */
-.texto {
+.texto-carousel {
   opacity: 1; /* visible siempre para no complicarlo */
 }
 
