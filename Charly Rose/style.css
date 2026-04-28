@@ -80,7 +80,7 @@ body {
 }
 
 /* contenedor del lado derecho */
-.right {
+.menu-container {
   display: inline-flex;
   flex-direction: column; /* uno debajo del otro */
   align-items: flex-end; /* alineado a la derecha */
@@ -152,4 +152,12 @@ body {
 /* efecto de aparición (opcional, pero lo dejo simple) */
 .texto {
   opacity: 1; /* visible siempre para no complicarlo */
+}
+
+/* ================== TEXTO ================== */
+.content{
+  padding: 40px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: marcellus, serif;
 }
