@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio CharlyRose</title>
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio CharlyRose</title>
 
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
 
 <body>
 
-<!-- Barra de navegación -->
 <header class="header">
-    <!-- Logo -->
-    <div id="logo">
-        <img src="imagenes/5Recurso 1.png" alt="Logo">
-    </div>
-    <!-- Menú + buscador -->
-  <navbar class="menu-container">
-        <!-- Menú -->
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-        </ul>
-        <!-- Buscador -->
-      <input type="text" placeholder="Buscar..." class="search">
-    </navbar>
+
+  <div class="logo">
+    <img src="imagenes/5Recurso 1.png" alt="Logo">
+  </div>
+
+  <nav class="menu-container">
+    <ul class="menu">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
+    </ul>
+
+    <input type="text" placeholder="Buscar..." class="search">
+  </nav>
+
 </header>
 
-
-<!-- Carrusel -->
- <section class="carousel">
+<section class="carousel">
   <div class="slides">
-    
-    <!-- Imagen 1 -->
+
     <div class="slide">
       <img src="imagenes/CARR1.png" alt="">
       <div class="texto-carousel">
         <h2>Elegancia que enamora</h2>
-        <p class="texto-fondo">Explora nuestra colección y encuentra piezas que se sienten como tú: reales, seguras y únicas.
-Identifícate con cada diseño y compra ahora lo que te hace sentir auténtica, libre y hermosa.</p>
-<br><br>
+        <p>Explora nuestra colección y encuentra piezas únicas.</p>
         <button class="button">Comprar ahora</button>
       </div>
     </div>
 
-    <!-- Imagen 2 -->
     <div class="slide">
       <img src="imagenes/CARR2.png" alt="">
       <div class="texto-carousel">
-         <h2>Nueva colección</h2>
-        <p class="texto-fondo">Esta nueva colección nace del amor por lo natural, lo simple y lo real, sin rellenos ni excesos.</p>
-        <br><br>
+        <h2>Nueva colección</h2>
+        <p>Diseños pensados para ti.</p>
         <button class="button">Ver más</button>
       </div>
     </div>
 
-    <!-- Imagen 3 -->
-    <div class="slide">
-      <img src="imagenes/CARR3.png" alt="">
-      <div class="texto-carousel">
-        <h2>Moda que inspira</h2>
-        <p class="texto-fondo">Pensada para ti, que eliges sentirte segura, libre y auténtica en tu propia piel.</p>
-        <br><br>
-        <button class="button">Explorar</button>
-      </div>
+  </div>
+</section>
+<!-- ================== PRODUCTOS ================== -->
+<section class="productos">
+  <h2>Nuestros productos</h2>
+
+  <div class="categorias">
+
+    <div class="categoria">
+      <img src="imagenes/lenceria.jpg" alt="Lencería">
+      <h3>Lencería</h3>
     </div>
 
-    <!-- Imagen 4 -->
-    <div class="slide">
-      <img src="imagenes/CARR4.png" alt="">
-      <div class="texto-carousel">
-        <h2>Brilla con confianza</h2>
-        <p class="texto-fondo">Creamos cada pieza para acompañarte, porque amamos verte sentirte bien, poderosa y tú misma.</p>
-        <br><br>
-        <button class="button">Comprar</button>
-      </div>
+    <div class="categoria">
+      <img src="imagenes/cabello.jpg" alt="Accesorios para el cabello">
+      <h3>Accesorios para el cabello</h3>
     </div>
+
+    <div class="categoria">
+      <img src="imagenes/ecobag.jpg" alt="Ecobags">
+      <h3>Ecobags</h3>
+    </div>
+
   </div>
 </section>
 
-<!-- Texto de prueba -->
-<div class="content">
-  <p>Lorem ipsum dolor sit amet...</p>
-  <p>Lorem ipsum dolor sit amet...</p>
-</div>
 
-<!-- JS -->
+<!-- ================== FOOTER ================== -->
+<footer class="footer">
+  <p>© CharlyRose - Todos los derechos reservados</p>
+  <p>Correo: charlyentonorosa@gmail.com</p>
+  <p>Teléfono: +506 6082-6635</p>
+
+  <div class="redes">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">TikTok</a>
+  </div>
+</footer>
+
+<section
+
+
 <script src="script.js"></script>
 
 </body>
