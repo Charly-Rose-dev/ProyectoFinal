@@ -1,29 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Ejecuta el código cuando el HTML ya está cargado
+const slides = document.querySelector(".slides");
+const slide = document.querySelectorAll(".slide");
 
-  let index = 0;
+let index = 0;
 
-  const slides = document.querySelectorAll(".slide"); // lista de slides
-  const container = document.querySelector(".slides"); // contenedor que se mueve
+function moverCarrusel() {
+  index++;
 
-  // Verificación por si algo falla
-  if (!container || slides.length === 0) {
-    console.error("No se encontraron los elementos del carrusel");
-    return;
+  if (index >= slide.length) {
+    index = 0;
   }
 
-  function cambiarSlide() {
-    index++;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
 
-    // Reinicia al llegar al final
-    if (index >= slides.length) {
-      index = 0;
-    }
+setInterval(moverCarrusel, 4000);
 
-    // Movimiento horizontal del carrusel
-    container.style.transform = `translateX(-${index * 100}%)`;
-  }
 
-  // Intervalo automático
-  setInterval(cambiarSlide, 3000);
+const hamburguesa = document.querySelector(".hamburguesa");
+const menu = document.querySelector(".menu-container");
+
+hamburguesa.addEventListener("click", () => {
+
+  menu.classList.toggle("active");
+
 });

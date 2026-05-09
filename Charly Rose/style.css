@@ -1,40 +1,78 @@
-/* ================== GENERAL ================== */
+/* ================== RESET ================== */
+  * {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
 
 /* ================== HEADER ================== */
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.95);
-  padding: 10px 40px;
+
+  padding: 15px 40px;
+
+  z-index: 1000;
+
+  background-color: rgba(0, 0, 0, 0.304);
 }
 
-/* LOGO */
+/* HAMBURGUESA */
+.hamburguesa {
+  display: none;
+
+  font-size: 35px;
+  color: white;
+
+  cursor: pointer;
+
+  z-index: 2000;
+}
+
+/* ================== LOGO ================== */
 .logo img {
-  height: 80px;
+  height: 55px;
   width: auto;
+
+  filter: drop-shadow(0 0 2px rgb(18, 8, 8));
 }
 
-/* MENÚ */
-.menu {
-  list-style: none;
+/* ================== MENU ================== */
+
+ .menu {
+  list-style: none;;
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 85px;
   margin: 0;
   padding: 0;
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: rgb(237, 221, 221);
   position: relative;
   font-size: 20px;
-  letter-spacing: 1px;
+  font-family: 'poppins', sans-serif;
+  /* font-weight: bolder; */
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 20px rgb(20, 15, 15);
 }
 
 /* HOVER */
@@ -42,7 +80,7 @@ body {
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 4px;
   background: rgb(236, 193, 193);
   left: 0;
   bottom: -5px;
@@ -53,216 +91,234 @@ body {
   width: 100%;
 }
 
-/* BUSCADOR */
-.search {
-  width: 180px;
-  height: 30px;
-  border-radius: 14px;
-  padding: 0 10px;
-  border: none;
-}
-
-/* CONTENEDOR DERECHO */
+/* ================== MENU CONTAINER ================== */
 .menu-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  margin-left: auto;
+  gap: 20px;
+}
+
+/* ================== SEARCH ================== */
+.search {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 3px solid rgba(255,255,255,0.4);
+  background: transparent;
+  backdrop-filter: blur(25px);
+  color: white;
+  outline: none; 
+}
+
+.search:focus {
+  border-color: rgb(236, 193, 193);
+  background: transparent;
+  box-shadow: 0 0 30px rgb(236, 193, 193);
+}
+
+
+.search::placeholder {
+  color: white;
 }
 
 /* ================== CARRUSEL ================== */
 .carousel {
   width: 100%;
-  height: 700px;
   overflow: hidden;
   position: relative;
-  
 }
 
+/* SLIDES */
 .slides {
   display: flex;
+  transition: transform 1s ease;
 }
 
+/* CADA SLIDE */
 .slide {
   min-width: 100%;
   position: relative;
 }
 
+/* IMAGEN */
 .slide img {
   width: 100%;
-  height: 100%;
+  height: 700px;
+
   object-fit: cover;
+  display: block;
 }
 
 /* CAPA OSCURA */
 .slide::before {
   content: "";
+
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+
+  background: rgba(0, 0, 0, 0.607);
+
+  z-index: 1;
 }
 
-/* TEXTO */
+/* ================== TEXTO CARRUSEL ================== */
 .texto-carousel {
   position: absolute;
+
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
-  
+
   text-align: center;
+
   color: white;
+
   width: 80%;
+
+  z-index: 2;
 }
 
+/* TITULO */
 .texto-carousel h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 60px;
+  font-family: "Petemoss", cursive;
+
+  font-size: 110px;
+
   margin: 0;
+
+  text-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
 
+/* PARRAFO */
 .texto-carousel p {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 25px;
+
+  margin-top: 15px;
+
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
-/* BOTÓN */
+/* ================== BOTON ================== */
 .button {
+  margin-top: 25px;
+
   padding: 12px 25px;
+
   border: none;
+
   background: rgb(212, 134, 134);
+
   color: white;
+
   border-radius: 8px;
-  font-size: 18px;
+
+  font-size: 22px;
+  font-weight: bold;
+
   cursor: pointer;
+
   transition: 0.3s;
 }
 
 .button:hover {
   background: rgb(245, 221, 221);
-  color: black;
-}
 
-/* ================== CONTENIDO ================== */
-.content {
-  padding: 30px;
+  color: black;
+
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
 /* ================== PRODUCTOS ================== */
 .productos {
   text-align: center;
-  padding: 50px 20px;
+
+  padding: 60px 20px;
 }
 
 .productos h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-family: 'Cinzel', serif;
+
+  font-size: 42px;
+
   margin-bottom: 40px;
 }
 
-/* contenedor de categorías */
+/* CONTENEDOR */
 .categorias {
   display: flex;
+
   justify-content: center;
+
   gap: 30px;
+
   flex-wrap: wrap;
 }
 
-/* cada categoría */
+/* CATEGORIA */
 .categoria {
-  width: 250px;
-  text-align: center;
+  width: 260px;
 }
 
-/* imágenes */
+/* IMAGEN */
 .categoria img {
   width: 100%;
-  height: 300px;
+  height: 320px;
+
   object-fit: cover;
+
   border-radius: 10px;
+
   transition: 0.3s;
 }
 
-/* efecto hover */
 .categoria img:hover {
   transform: scale(1.05);
 }
 
-/* título */
+/* TEXTO */
 .categoria h3 {
-  margin-top: 10px;
-  font-size: 20px;
+  margin-top: 12px;
+
+  font-size: 22px;
 }
 
 /* ================== FOOTER ================== */
 .footer {
   background: #b76e79;
+
   color: white;
+
   text-align: center;
-  padding: 15px 10px; /* 👈 menos espacio */
-  font-size: 14px; /* 👈 texto más pequeño */
+
+  padding: 15px 10px;
+
+  font-size: 14px;
 }
 
-/* redes */
+.footer p {
+  margin: 5px 0;
+}
+
+/* REDES */
 .redes {
   margin-top: 8px;
 }
 
 .redes a {
   color: white;
-  margin: 0 8px;
+
   text-decoration: none;
+
+  margin: 0 8px;
+
   font-size: 16px;
 }
 
 .redes a:hover {
   text-decoration: underline;
-}
-
-/* ================== RESPONSIVE ================== */
-@media (max-width: 768px) {
-
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .menu-container {
-    flex-direction: column;
-  }
-
-  .search {
-    width: 80%;
-  }
-
-  .texto-carousel h2 {
-    font-size: 30px;
-  }
-
-  .texto-carousel p {
-    font-size: 16px;
-  }
-
-  .button {
-    width: 70%;
-  }
-    .productos h2 {
-    font-size: 28px;
-  }
-
-  .categoria {
-    width: 80%;
-  }
-  .carousel {
-    height: 400px;
-  }
-
 }

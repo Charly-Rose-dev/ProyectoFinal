@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  /* LOGO */
+  .logo img {
+    height: 50px;
+  }
+  @media (max-width: 768px) {
+
+  /* mostrar hamburguesa */
+  .hamburguesa {
+    display: block;
+  }
+
+  /* ocultar menú */
+  .menu-container {
+    display: none;
+
+    width: 100%;
+
+    text-align: center;
+
+    background: rgba(0,0,0,0.9);
+
+    padding: 20px 0;
+  }
+
+  /* mostrar cuando tenga active */
+  .menu-container.active {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  /* menú */
+  .menu {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+}
+
+  /* MENÚ */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 27px;
+  }
+
+  /* CONTENEDOR */
+  .menu-container {
+    align-items: center;
+    width: 100%;
+  }
+
+  /* BUSCADOR */
+  .search {
+    width: 80%;
+    ;
+  }
+
+  /* CARRUSEL */
+  .slide img {
+    height: 450px;
+  }
+
+  /* TEXTO */
+  .texto-carousel {
+    width: 90%;
+  }
+
+  .texto-carousel h2 {
+    font-size: 55px;
+  }
+
+  .texto-carousel p {
+    font-size: 16px;
+  }
+
+  /* BOTÓN */
+  .button {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  /* PRODUCTOS */
+  .productos h2 {
+    font-size: 30px;
+  }
+
+  .categoria {
+    width: 85%;
+  }
+
+  .categoria img {
+    height: 300px;
+  }
+
+}
