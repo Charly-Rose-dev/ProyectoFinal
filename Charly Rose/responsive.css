@@ -12,6 +12,7 @@
   .logo img {
     height: 50px;
   }
+
   @media (max-width: 768px) {
 
   /* mostrar hamburguesa */
@@ -22,22 +23,16 @@
   /* ocultar menú */
   .menu-container {
     display: none;
-
     width: 100%;
-
     text-align: center;
-
     background: rgba(0,0,0,0.9);
-
     padding: 20px 0;
   }
 
   /* mostrar cuando tenga active */
   .menu-container.active {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
   }
 

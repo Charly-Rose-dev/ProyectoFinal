@@ -1,3 +1,5 @@
+
+// CARRUSEL
 const slides = document.querySelector(".slides");
 const slide = document.querySelectorAll(".slide");
 
@@ -13,8 +15,10 @@ function moverCarrusel() {
   slides.style.transform = `translateX(-${index * 100}%)`;
 }
 
+
 setInterval(moverCarrusel, 4000);
 
+// MENU HAMBURGUESA
 
 const hamburguesa = document.querySelector(".hamburguesa");
 const menu = document.querySelector(".menu-container");

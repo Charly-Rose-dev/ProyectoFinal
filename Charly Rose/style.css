@@ -1,61 +1,56 @@
-/* ================== RESET ================== */
+/* ASEGURA EL TAMAÑO DE LOS ELEMENTOS */
   * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden;  /* EVITA QUE LOS ELEMENTOS DE LA PAGINA SE MUEVA HACIA LOS LADOS*/
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
 
-/* ================== HEADER ================== */
+body {
+  background-color: black;
+}
+
+/* HEADER */
 .header {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
-
-  display: flex;
-  justify-content: space-between;
+  display: flex;  /* PARA QUE SE ACOMODEN EN FILA */
+  justify-content: space-between; /* ESPACIO ENTRE LOS ELEMENTOS */
   align-items: center;
-
   padding: 15px 40px;
-
-  z-index: 1000;
-
+  z-index: 1000;   /* PARA QUE EL ELEMENTO QUEDE ENCIMA DE OTROS, EL NUMERO ALTO LO PONE DE PRIMERO */
   background-color: rgba(0, 0, 0, 0.304);
 }
 
 /* HAMBURGUESA */
 .hamburguesa {
   display: none;
-
   font-size: 35px;
   color: white;
-
-  cursor: pointer;
-
-  z-index: 2000;
+  cursor: pointer;   /* CONVIERTE EL CURSOR EN MANITA*/
+  z-index: 2000;  /* PARA QUE EL ELEMENTO QUEDE ENCIMA DE OTROS, EL NUMERO ALTO LO PONE DE PRIMERO */
 }
 
-/* ================== LOGO ================== */
+/*  LOGO */
 .logo img {
   height: 55px;
   width: auto;
-
-  filter: drop-shadow(0 0 2px rgb(18, 8, 8));
+  filter: drop-shadow(0 0 2px rgb(18, 8, 8)); /* CREA UN FILTRO DE SOMBRA ALREDOR DEL ELEMENTO*/
 }
 
-/* ================== MENU ================== */
+/* MENU */
 
  .menu {
-  list-style: none;;
-  display: flex;
+  list-style: none; 
+  display: flex; /* ACOMODA LOS ELEMENTOS EN FILA Y LOS HACE FACILES DE ACOMODAR */
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
@@ -67,7 +62,7 @@ body {
 .menu a {
   text-decoration: none;
   color: rgb(237, 221, 221);
-  position: relative;
+  position: relative; /* MUEVE UN POCO EL ELEMENTO SIN SACARLO DE SU ESPACIO ORIGINAL */
   font-size: 20px;
   font-family: 'poppins', sans-serif;
   /* font-weight: bolder; */
@@ -77,9 +72,10 @@ body {
 
 /* HOVER */
 .menu a::after {
-  content: "";
+  content: "";   /* CREA UN ELEMENTO FALSO */
+  font-size: 20px;
   position: absolute;
-  width: 0%;
+  width: 0%;    /* EMPIEZA INVESIBLE, DESDE 0 */
   height: 4px;
   background: rgb(236, 193, 193);
   left: 0;
@@ -91,7 +87,7 @@ body {
   width: 100%;
 }
 
-/* ================== MENU CONTAINER ================== */
+/* MENU CONTAINER */
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -100,7 +96,7 @@ body {
   gap: 20px;
 }
 
-/* ================== SEARCH ================== */
+/* BARRA DE BUSQUEDA */
 .search {
   width: 250px;
   height: auto;
@@ -125,10 +121,10 @@ body {
   color: white;
 }
 
-/* ================== CARRUSEL ================== */
+/* CARRUSEL */
 .carousel {
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* ESCONDE TODO LO QUE SALGA QUE NO ENTRA EN EL CONTENEDOR */
   position: relative;
 }
 
@@ -140,7 +136,7 @@ body {
 
 /* CADA SLIDE */
 .slide {
-  min-width: 100%;
+  min-width: 100%; /* HACE QUE EL ELEMENTO NO SEA MAS PEQUEÑO QUE SU TAMAÑO ORIGINAL */
   position: relative;
 }
 
@@ -148,114 +144,83 @@ body {
 .slide img {
   width: 100%;
   height: 700px;
-
-  object-fit: cover;
-  display: block;
+  object-fit: cover; /* HACE QUE LA IMAGEN CUBRA TODO EL CONTENEDOR SIN DEFORMARSE */
+  display: block; 
 }
 
 /* CAPA OSCURA */
 .slide::before {
-  content: "";
-
+  content: ""; /* CAPA OSCURA */
   position: absolute;
-  inset: 0;
-
+  inset: 0;  /* LO PEGA A TODOS LOS BORDES DEL CONTENEDOR */
   background: rgba(0, 0, 0, 0.607);
-
   z-index: 1;
 }
 
-/* ================== TEXTO CARRUSEL ================== */
+/* TEXTO DEL CARRUSEL */
 .texto-carousel {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   text-align: center;
-
   color: white;
-
   width: 80%;
-
   z-index: 2;
 }
 
 /* TITULO */
 .texto-carousel h2 {
   font-family: "Petemoss", cursive;
-
   font-size: 110px;
-
   margin: 0;
-
   text-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
 
 /* PARRAFO */
 .texto-carousel p {
   font-size: 25px;
-
   margin-top: 15px;
-
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
-/* ================== BOTON ================== */
+/*  BOTON */
 .button {
   margin-top: 25px;
-
   padding: 12px 25px;
-
   border: none;
-
   background: rgb(212, 134, 134);
-
   color: white;
-
   border-radius: 8px;
-
   font-size: 22px;
   font-weight: bold;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
 
 .button:hover {
   background: rgb(245, 221, 221);
-
   color: black;
-
   box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
-/* ================== PRODUCTOS ================== */
+/*  PRODUCTOS  */
 .productos {
   text-align: center;
-
   padding: 60px 20px;
 }
 
 .productos h2 {
-  font-family: 'Cinzel', serif;
-
-  font-size: 42px;
-
+  font-family: 'poppins', cursive;
+  font-size: 40px;
   margin-bottom: 40px;
 }
 
 /* CONTENEDOR */
 .categorias {
   display: flex;
-
   justify-content: center;
-
-  gap: 30px;
-
+  gap: 160px;
   flex-wrap: wrap;
 }
 
@@ -268,11 +233,8 @@ body {
 .categoria img {
   width: 100%;
   height: 320px;
-
-  object-fit: cover;
-
+  object-fit: cover; /* HACE QUE LA IMAGEN CUBRA TODO EL CONTENEDOR SIN DEFORMARSE */
   border-radius: 10px;
-
   transition: 0.3s;
 }
 
@@ -287,16 +249,12 @@ body {
   font-size: 22px;
 }
 
-/* ================== FOOTER ================== */
+/*  FOOTER  */
 .footer {
   background: #b76e79;
-
   color: white;
-
   text-align: center;
-
   padding: 15px 10px;
-
   font-size: 14px;
 }
 
@@ -311,11 +269,8 @@ body {
 
 .redes a {
   color: white;
-
   text-decoration: none;
-
   margin: 0 8px;
-
   font-size: 16px;
 }
 
