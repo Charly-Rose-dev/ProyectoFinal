@@ -10,10 +10,7 @@ body {
   overflow-x: hidden;  /* EVITA QUE LOS ELEMENTOS DE LA PAGINA SE MUEVA HACIA LOS LADOS*/
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-}
-
-body {
-  background-color: black;
+  
 }
 
 /* HEADER */
@@ -172,7 +169,7 @@ body {
 /* TITULO */
 .texto-carousel h2 {
   font-family: "Petemoss", cursive;
-  font-size: 110px;
+  font-size: 180px;
   margin: 0;
   text-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
@@ -180,7 +177,7 @@ body {
 /* PARRAFO */
 .texto-carousel p {
   font-size: 25px;
-  margin-top: 15px;
+  margin-top: 5px;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
@@ -208,11 +205,13 @@ body {
 .productos {
   text-align: center;
   padding: 60px 20px;
+  background-color: rgb(245, 241, 234);
 }
 
 .productos h2 {
-  font-family: 'poppins', cursive;
-  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: rgb(26, 26, 26);
   margin-bottom: 40px;
 }
 
@@ -222,6 +221,7 @@ body {
   justify-content: center;
   gap: 160px;
   flex-wrap: wrap;
+  
 }
 
 /* CATEGORIA */
@@ -240,13 +240,16 @@ body {
 
 .categoria img:hover {
   transform: scale(1.05);
+  box-shadow: 0px 0px 40px rgba(216, 167, 160, 0.5);
 }
+
 
 /* TEXTO */
 .categoria h3 {
+  font-family: "Playfair Display", serif;
   margin-top: 12px;
-
-  font-size: 22px;
+  font-size: 30px;
+  color: rgb(26, 26, 26);
 }
 
 /*  FOOTER  */
