@@ -183,8 +183,9 @@ body {
 
 /*  BOTON */
 .button {
-  margin-top: 25px;
-  padding: 12px 25px;
+  display: inline-block;
+  padding: 12px 25px; 
+  margin-top: 20px;
   border: none;
   background: rgb(212, 134, 134);
   color: white;
@@ -193,6 +194,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -201,101 +203,36 @@ body {
   box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
-.atelier-section {
-  background: linear-gradient(
-    to bottom,
-    rgb(247, 240, 232),
-    rgb(232, 216, 195),
-  );
 
-  padding: 80px 20px;
-}
-
-/* CONTENIDO */
-.atelier {
-  max-width: 990px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* TÍTULO */
-.atelier h2 {
-  font-size: 60px;
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
-  color: rgb(212, 134, 134);
-}
-
-/* PÁRRAFOS */
-.atelier p {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-/* VIDEO */
-.video-section {
-  text-align: center;
-  padding: 70px 20px;
-  background: rgb(232, 216, 195);
-}
-
-.video-section h2 {
-  font-family: 'Playfair Display', serif;
-  /* text-shadow: 0 0 3px rgb(27, 23, 23); */
-  font-size: 60px;
-  margin-bottom: 60px;
-  color:rgb(26,26,26);
-
-}
-
-.video-box{
-  width: 700px;
-  max-width: 90%;
-  margin: auto;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 25px rgba(0,0,0,0.15);
-}
-
-
-.video-box iframe {
-  width: 100%;
-  height: 400px;
-  display: block;
-}
-
-.video-box:hover {
-  transform: scale(1.01);
-  transition: 0.3s;
-}
 
 /*  PRODUCTOS  */
 .productos {
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px;
   background-color: white;
+  margin: 100px;
 }
 
 .productos h2 {
   font-family: 'Playfair Display', serif;
   font-size: 60px;
   color: rgb(212, 134, 134);
-  margin-bottom: 40px;
+  margin-bottom: 110px;
+  margin-top: 30px;
 }
 
 /* CONTENEDOR */
 .categorias {
   display: flex;
   justify-content: center;
-  gap: 160px;
+  gap: 100px;
   flex-wrap: wrap;
   
 }
 
 /* CATEGORIA */
 .categoria {
-  width: 260px;
+  width: 250px;
 }
 
 /* IMAGEN */
@@ -321,6 +258,69 @@ body {
   color: rgb(25, 23, 23);
 }
 
+/* CONTENEDOR VIDEO E INFORMACION */
+.atelier-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  background: rgba(247, 217, 217, 0.87);
+
+  padding: 30px 20px;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+/* TEXTO */
+.atelier {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* TÍTULO */
+.atelier h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: rgb(212, 134, 134);
+}
+
+/* PÁRRAFOS */
+.atelier p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+/* TITULO VIDEO */
+.video-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: rgb(212, 134, 134);
+}
+
+/* CAJA VIDEO */
+.video-box {
+  width: 700px;
+  max-width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.video-box:hover {
+  transform: scale(1.01);
+}
 /*  FOOTER  */
 .footer {
   background-color: rgba(0, 0, 0, 0.975);
