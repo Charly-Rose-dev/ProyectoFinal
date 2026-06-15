@@ -13,14 +13,12 @@
     height: 50px;
   }
 
-  @media (max-width: 768px) {
-
-  /* mostrar hamburguesa */
+  /* HAMBURGUESA */
   .hamburguesa {
     display: block;
   }
 
-  /* ocultar menú */
+  /* MENÚ OCULTO */
   .menu-container {
     display: none;
     width: 100%;
@@ -29,28 +27,19 @@
     padding: 20px 0;
   }
 
-  /* mostrar cuando tenga active */
+  /* MENÚ ABIERTO */
   .menu-container.active {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* menú */
-  .menu {
-    flex-direction: column;
-
-    gap: 20px;
-  }
-
-}
-
   /* MENÚ */
   .menu {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 12px;
+    gap: 20px;
   }
 
   .menu li {
@@ -62,16 +51,9 @@
     font-size: 27px;
   }
 
-  /* CONTENEDOR */
-  .menu-container {
-    align-items: center;
-    width: 100%;
-  }
-
   /* BUSCADOR */
   .search {
     width: 80%;
-    ;
   }
 
   /* CARRUSEL */
@@ -84,8 +66,8 @@
     width: 90%;
   }
 
-  .texto-carousel h2 {
-    font-size: 55px;
+  .texto-carousel h1 {
+    font-size: 90px;
   }
 
   .texto-carousel p {
@@ -110,5 +92,56 @@
   .categoria img {
     height: 300px;
   }
+
+  /* BENEFICIOS */
+  .beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  /* VIDEO */
+  .video-box {
+    width: 100%;
+  }
+
+  .video-box iframe {
+    height: 250px;
+  }
+
+  /* ATELIER */
+  .atelier {
+    padding: 0 15px;
+  }
+
+  /* HERO TIENDA */
+.hero-tienda {
+  height: 300px;
+}
+
+.hero-tienda h1 {
+  font-size: 70px;
+}
+
+.hero-tienda p {
+  font-size: 16px;
+}
+}
+
+@media (max-width: 992px){
+
+    .catalogo{
+        grid-template-columns:1fr;
+    }
+
+    .productos-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .productos-grid{
+        grid-template-columns:1fr;
+    }
 
 }

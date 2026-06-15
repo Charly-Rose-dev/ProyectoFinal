@@ -1,0 +1,183 @@
+<html lang="es">
+<head> <!--ENCABEZADO DE LA PAGINA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lencería CharlyRose</title>
+
+  <!-- FUENTES A UTILIZAR -->
+ <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+
+  <!-- ENLACES DE PAGINAS CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <!-- ENLACE BOOTSTRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+   <!-- ICONOS DE BOOTSTRAP -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head> <!--FIN DEL ENCABEZADO -->
+
+
+
+<body>
+<header class="header">
+  <div class="logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
+  </div>
+
+  <div class="hamburguesa">
+    ☰                <!-- ICONO DE HAMBURGUESA -->
+  </div>
+
+  <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+    <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
+      <li><a href="home.html">Inicio</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+    </ul>
+
+    <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+  </nav>
+
+</header>
+  
+
+<section class="hero-tienda">
+     <img src="imagenes/banner/Banner profesional lencería.png" alt="">
+    <h1>Lencería</h1>
+    <p>Diseños artesanales creados con amor y elegancia.</p>
+</section>
+
+<div class="catalogo">
+
+    <!-- FILTROS -->
+    <aside class="filtros">
+
+        <h3>Filtros</h3>
+
+        <h4>Talla</h4>
+        <label><input type="checkbox"> S</label>
+        <label><input type="checkbox"> M</label>
+        <label><input type="checkbox"> L</label>
+
+        <h4>Color</h4>
+        <label><input type="checkbox"> Negro</label>
+        <label><input type="checkbox"> Blanco</label>
+        <label><input type="checkbox"> Rosa</label>
+
+        <h4>Precio</h4>
+        <input type="range" min="0" max="20000">
+
+    </aside>
+
+    <!-- PRODUCTOS -->
+    <section class="productos-categoria-lenceria">
+
+        <div class="productos-grid">
+
+            <div class="producto">
+                <img src="imagenes/lenceria/calzon1.png" alt="Conjunto Floral">
+                <h3>Conjunto Floral</h3>
+                <p>₡12.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/calzon2.png" alt="Conjunto Encaje">
+                <h3>Conjunto Encaje</h3>
+                <p>₡14.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/Calzon4.png" alt="Conjunto Romance">
+                <h3>Conjunto Romance</h3>
+                <p>₡15.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/Conjunto1.png" alt="Conjunto Elegance">
+                <h3>Conjunto Elegance</h3>
+                <p>₡13.500</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/Conjunto2.png" alt="Conjunto Rosé">
+                <h3>Conjunto Rosé</h3>
+                <p>₡16.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/set2sosten.png" alt="Conjunto Deluxe">
+                <h3>Conjunto Deluxe</h3>
+                <p>₡17.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/bralettcorsett.png" alt="Conjunto Satin">
+                <h3>Conjunto Satin</h3>
+                <p>₡11.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/Conjunto4.png" alt="Conjunto Luxury">
+                <h3>Conjunto Luxury</h3>
+                <p>₡18.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="imagenes/lenceria/calzon6.png" alt="Conjunto Premium">
+                <h3>Conjunto Premium</h3>
+                <p>₡20.000</p>
+                <button>Agregar al carrito</button>
+            </div>
+
+        </div>
+
+        <div class="paginacion">
+            <button>Página anterior</button>
+            <span>Página 1 de 3</span>
+            <button>Página siguiente</button>
+        </div>
+
+    </section>
+
+    <!-- CARRITO -->
+    <aside class="carrito">
+
+        <h3>Carrito</h3>
+
+        <div id="lista-carrito">
+            <p class="carrito-vacio">Tu carrito está vacío</p>
+        </div>
+
+        <hr>
+
+        <p><strong>Subtotal:</strong> ₡<span id="subtotal">0</span></p>
+        <p><strong>IVA (13%):</strong> ₡<span id="iva">0</span></p>
+        <p><strong>Total:</strong> ₡<span id="total">0</span></p>
+
+        <button class="btn-comprar">
+            Finalizar compra
+        </button>
+
+    </aside>
+
+</div>
+
+ <script src="js/script.js"></script>
+
+</body>
+</html>

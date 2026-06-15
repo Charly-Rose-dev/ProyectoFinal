@@ -2,11 +2,12 @@
 <head> <!--ENCABEZADO DE LA PAGINA -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio CharlyRose</title>
+  <title>Tienda CharlyRose</title>
 
   <!-- FUENTES A UTILIZAR -->
   <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+
 
   <!-- ENLACES DE PAGINAS CSS -->
   <link rel="stylesheet" href="style.css">
@@ -14,12 +15,17 @@
 
   <!-- ENLACE BOOTSTRAP-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+   <!-- ICONOS DE BOOTSTRAP -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head> <!--FIN DEL ENCABEZADO -->
 
 <body>
 <header class="header">
   <div class="logo">
-    <img src="imagenes/LOGO.png" alt="Logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
   </div>
 
   <div class="hamburguesa">
@@ -28,13 +34,148 @@
 
   <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
     <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Tienda</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="home.html">Inicio</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
     </ul>
 
     <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
   </nav>
 
 </header>
+
+
+<!-- TITULO -->
+<section class="hero-tienda">
+
+    <h1>Nuestra Tienda</h1>
+    <img src="imagenes/banner/banner-tienda.png" alt="Tienda">
+
+    <p>
+        Descubre productos hechos con amor, calidad y atención a cada detalle.
+    </p>
+
+</section>
+
+<!-- CATEGORIAS -->
+ <section class="productos">
+<h2>Explora nuestras Categorías</h2>
+
+  
+
+  <div class="categorias">
+
+    <div class="categoria">
+      <img src="imagenes/lenceria/lenceria.png" alt="Lencería">
+     <a href="lenceria.html" class="button">
+    Lencería
+    </a>
+    </div>
+
+    <div class="categoria">
+      <img src="imagenes/cabello/acesorios.png" alt="Accesorios para el cabello">
+      <a href="accesorios.html" class="button">
+    Accesorios
+    </a>
+    </div>
+
+    <div class="categoria">
+      <img src="imagenes/cuidado-personal/desmaquillante.png" alt="Cuidado Personal">
+    <a href="cuidado_personal.html" class="button">
+    Cuidado Personal
+    </a>
+    </div>
+
+    <div class="categoria">
+      <img src="imagenes/ecobags/ecobags.png" alt="Ecobags">
+      <a href="ecobags.html" class="button"> 
+    Ecobags
+    </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PRODUCTOS DESTACADOS -->
+
+ <h2>Productos Destacados</h2>
+
+<section class="productos-destacados">
+
+    <div class="productos-grid">
+
+        <div class="producto">
+            <img src="imagenes/lenceria/Conjunto2.png" alt="">
+            <h3>Conjunto Floral</h3>
+            <p>₡12.000</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/cuidado-personal/desmaquillante.png" alt="">
+            <h3>Set Skincare</h3>
+            <p>₡15.000</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/ecobags/ecobagsmensaje.png.png" alt="">
+            <h3>Ecobag Natural</h3>
+            <p>₡7.500</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/cabello/scrunchies-encajes.png" alt="">
+            <h3>Scrunchie Old Money</h3>
+            <p>₡2.500</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/lenceria/set2sosten.png " alt="">
+            <h3>Lencería Encaje</h3>
+            <p>₡14.000</p>
+            <button>Ver producto</button>
+        </div>
+
+      
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© CharlyRose - Todos los derechos reservados</p>
+  <p>Correo: charlyentonorosa@gmail.com</p>
+  <p>Teléfono: +506 6082-6635</p>
+
+  <div class="redes">
+
+     <div class="redes-sociales">
+
+    <a href="#">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-tiktok"></i>
+    </a>
+
+  </div>
+
+    <!-- <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">TikTok</a> -->
+  </div>
+</footer>
+
+</body>
+</html>
