@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
 
   <!-- ENLACE BOOTSTRAP-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -23,27 +23,102 @@
 <body>
 <header class="header">
   <div class="logo">
-    <img src="imagenes/a/logo.png" alt="Logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
   </div>
 
   <div class="hamburguesa">
     ☰                <!-- ICONO DE HAMBURGUESA -->
   </div>
+  
 
-  <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
     <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="../home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="../tienda.html">
+                Tienda
+            </a>
+
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="lenceria.html">
+                        Lencería
+                    </a>
+                </li>
+
+                <li>
+                    <a href="accesorios_cabello.html">
+                        Accesorios para el cabello
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cuidado_personal.html">
+                        Cuidado personal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ecobags.html">
+                        Ecobags
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            <a href="../contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
     </ul>
 
-    <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+</nav>
+    </ul>
+
+</nav>
   </nav>
 
+
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
+
 </header>
+
 <section class="hero-tienda">
     <h1>EcoBags</h1>
+    <img src="../Imagenes/banner/banner-ecobags.png" alt="Banner EcoBags">
     <p> Bolsas ecológicas hechas con materiales sostenibles.</p>
 </section>
 
@@ -75,68 +150,33 @@
         <div class="productos-grid">
 
             <div class="producto">
-                <img src="imagenes/conjunto1.png" alt="">
-                <h3>Conjunto Floral</h3>
-                <p>₡12.000</p>
-                <button>Agregar al carrito</button>
-            </div>
+                <img src="../Imagenes/ecobags/ecobags.png" alt="">
+                <h3>Set de Bolsas Floral</h3>
+                <p>₡7.000</p>
+                 <a href="../productos/producto.html?id=23" class="button-categoria">
+                Ver Producto
+                </a>
+                  <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+    </div>
 
-            <div class="producto">
-                <img src="imagenes/conjunto2.png" alt="">
-                <h3>Conjunto Encaje</h3>
-                <p>₡14.000</p>
-                <button>Agregar al carrito</button>
-            </div>
 
-            <div class="producto">
-                <img src="imagenes/conjunto3.png" alt="">
-                <h3>Conjunto Romance</h3>
-                <p>₡15.000</p>
-                <button>Agregar al carrito</button>
-            </div>
+         <div class="producto">
+                <img src="../productos/Imagenes/ecobags/ecobagsmensaje.png.png" alt="">
+                <h3>Bolsa Ecoheart</h3>
+                <p>₡3.000</p>
+                 <a href="../productos/producto.html?id=24" class="button-categoria">
+                Ver Producto
+                </a>
+                  <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+    </div>
 
-            <div class="producto">
-                <img src="imagenes/conjunto4.png" alt="">
-                <h3>Conjunto Elegance</h3>
-                <p>₡13.500</p>
-                <button>Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="imagenes/conjunto5.png" alt="">
-                <h3>Conjunto Rosé</h3>
-                <p>₡16.000</p>
-                <button>Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="imagenes/conjunto6.png" alt="">
-                <h3>Conjunto Deluxe</h3>
-                <p>₡17.000</p>
-                <button>Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="imagenes/conjunto7.png" alt="">
-                <h3>Conjunto Satin</h3>
-                <p>₡11.000</p>
-                <button>Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="imagenes/conjunto8.png" alt="">
-                <h3>Conjunto Luxury</h3>
-                <p>₡18.000</p>
-                <button>Agregar al carrito</button>
-            </div>
-
-            <div class="producto">
-                <img src="imagenes/conjunto9.png" alt="">
-                <h3>Conjunto Premium</h3>
-                <p>₡20.000</p>
-                <button>Agregar al carrito</button>
-            </div>
-
+            
         </div>
 
         <div class="paginacion">
@@ -151,26 +191,40 @@
 
     </main>
 
-    <!-- CARRITO -->
-    <aside class="carrito">
+   <!-- CARRITO -->
+<div class="carrito">
 
-        <h3>Carrito</h3>
+<h3>Carrito</h3>
 
-        <div class="item-carrito">
-            <p>Conjunto Floral</p>
-            <p>₡12.000</p>
-        </div>
+<div id="lista-carrito">
+    <p class="carrito-vacio">Tu carrito está vacío</p>
+</div>
 
-        <hr>
+<hr>
 
-        <p><strong>Subtotal:</strong> ₡12.000</p>
-        <p><strong>IVA (13%):</strong> ₡1.560</p>
-        <p><strong>Total:</strong> ₡13.560</p>
+<p>
+    <strong>Subtotal:</strong> ₡<span id="subtotal">0</span>
+</p>
 
-        <button class="btn-comprar">
-            Finalizar compra
-        </button>
+<p>
+    <strong>IVA (13%):</strong> ₡<span id="iva">0</span>
+</p>
 
-    </aside>
+<p>
+    <strong>Total:</strong> ₡<span id="total">0</span>
+</p>
+
+<button class="btn-finalizar">
+    Finalizar compra
+</button>
+
+</div>
 
 </section>
+ 
+<script src="../carrito.js"></script>
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

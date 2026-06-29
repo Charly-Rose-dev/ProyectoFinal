@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
 
   <!-- ENLACES DE PAGINAS CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
 
   <!-- ENLACE BOOTSTRAP-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -25,31 +26,105 @@
 
 
 <body>
+
 <header class="header">
   <div class="logo">
-     <img src="imagenes/a/logo.png" alt="Logo">
+     <img src="/Charly Rose/productos/Imagenes/a/LOGO.png" alt="Logo">
   </div>
 
   <div class="hamburguesa">
     ☰                <!-- ICONO DE HAMBURGUESA -->
   </div>
+  
 
-  <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
     <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="../home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="../tienda.html">
+                Tienda
+            </a>
+
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="lenceria.html">
+                        Lencería
+                    </a>
+                </li>
+
+                <li>
+                    <a href="accesorios_cabello.html">
+                        Accesorios para el cabello
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cuidado_personal.html">
+                        Cuidado personal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ecobags.html">
+                        Ecobags
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            <a href="../contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
     </ul>
 
-    <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+</nav>
+    </ul>
+
+</nav>
   </nav>
 
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
+
 </header>
+
   
 
 <section class="hero-tienda">
-     <img src="imagenes/banner/Banner profesional lencería.png" alt="">
+     <img src="../Imagenes/banner/Banner profesional lencería.png" alt="">
     <h1>Lencería</h1>
     <p>Diseños artesanales creados con amor y elegancia.</p>
 </section>
@@ -82,66 +157,120 @@
         <div class="productos-grid">
 
             <div class="producto">
-                <img src="imagenes/lenceria/calzon1.png" alt="Conjunto Floral">
-                <h3>Conjunto Floral</h3>
-                <p>₡12.000</p>
-                <button>Agregar al carrito</button>
+                <img src="../Imagenes/lenceria/calzon1.png" alt="Set de Panty Scrunchie">
+                <h3>Set de Panty Scrunchie</h3>
+                <p>₡16.000</p>
+                <a href="../productos/producto.html?id=1" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/calzon2.png" alt="Conjunto Encaje">
-                <h3>Conjunto Encaje</h3>
-                <p>₡14.000</p>
-                <button>Agregar al carrito</button>
+                <img src="../Imagenes/lenceria/calzon2.png" alt="Conjunto Encaje">
+                <h3>Set de Panty Floral</h3>
+                <p>₡18.000</p>
+                <a href="../productos/producto.html?id=2" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/Calzon4.png" alt="Conjunto Romance">
+                <img src="../Imagenes/lenceria/Calzon4.png" alt="Conjunto Romance">
                 <h3>Conjunto Romance</h3>
                 <p>₡15.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=3" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/Conjunto1.png" alt="Conjunto Elegance">
+                <img src="../Imagenes/lenceria/Conjunto1.png" alt="Conjunto Elegance">
                 <h3>Conjunto Elegance</h3>
-                <p>₡13.500</p>
-                <button>Agregar al carrito</button>
+                <p>₡16.500</p>
+                <a href="../productos/producto.html?id=4" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/Conjunto2.png" alt="Conjunto Rosé">
+                <img src="../Imagenes/lenceria/Conjunto2.png" alt="Conjunto Rosé">
                 <h3>Conjunto Rosé</h3>
                 <p>₡16.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=5" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/set2sosten.png" alt="Conjunto Deluxe">
-                <h3>Conjunto Deluxe</h3>
+                <img src="../Imagenes/lenceria/set2sosten.png" alt="Conjunto Deluxe">
+                <h3>Set Deluxe</h3>
                 <p>₡17.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=6" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/bralettcorsett.png" alt="Conjunto Satin">
-                <h3>Conjunto Satin</h3>
+                <img src="../Imagenes/lenceria/bralettcorsett.png" alt="Conjunto Satin">
+                <h3>Bralett Corsét</h3>
                 <p>₡11.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=1" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/Conjunto4.png" alt="Conjunto Luxury">
-                <h3>Conjunto Luxury</h3>
+                <img src="../Imagenes/lenceria/Conjunto4.png" alt="Conjunto Luxury">
+                <h3>Conjunto Love Luxury</h3>
                 <p>₡18.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=8" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
             <div class="producto">
-                <img src="imagenes/lenceria/calzon6.png" alt="Conjunto Premium">
-                <h3>Conjunto Premium</h3>
+                <img src="../Imagenes/lenceria/setjuvenil5.png" alt="Conjunto Premium">
+                <h3>Conjunto Red Bloom</h3>
                 <p>₡20.000</p>
-                <button>Agregar al carrito</button>
+                <a href="../productos/producto.html?id=9" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
             </div>
 
         </div>
@@ -154,30 +283,39 @@
 
     </section>
 
-    <!-- CARRITO -->
-    <aside class="carrito">
+ <!-- CARRITO -->
+<div class="carrito">
 
-        <h3>Carrito</h3>
+<h3>Carrito</h3>
 
-        <div id="lista-carrito">
-            <p class="carrito-vacio">Tu carrito está vacío</p>
-        </div>
+<div id="lista-carrito">
+    <p class="carrito-vacio">Tu carrito está vacío</p>
+</div>
 
-        <hr>
+<hr>
 
-        <p><strong>Subtotal:</strong> ₡<span id="subtotal">0</span></p>
-        <p><strong>IVA (13%):</strong> ₡<span id="iva">0</span></p>
-        <p><strong>Total:</strong> ₡<span id="total">0</span></p>
+<p>
+    <strong>Subtotal:</strong> ₡<span id="subtotal">0</span>
+</p>
 
-        <button class="btn-comprar">
-            Finalizar compra
-        </button>
+<p>
+    <strong>IVA (13%):</strong> ₡<span id="iva">0</span>
+</p>
 
-    </aside>
+<p>
+    <strong>Total:</strong> ₡<span id="total">0</span>
+</p>
+
+<button class="btn-finalizar">
+    Finalizar compra
+</button>
 
 </div>
 
- <script src="js/script.js"></script>
+<script src="../carrito.js"></script>
+<script src="./producto.js"></script>
+<script src="../js/script.js"></script>
+
 
 </body>
 </html>

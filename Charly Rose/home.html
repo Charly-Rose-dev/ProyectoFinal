@@ -15,8 +15,8 @@
   
 
   <!-- ENLACES DE PAGINAS CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
   <!-- ENLACE BOOTSTRAP-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -30,64 +30,145 @@
 <body>
 <header class="header">
   <div class="logo">
-    <img src="imagenes/a/LOGO.png" alt="Logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
   </div>
 
   <div class="hamburguesa">
     ☰                <!-- ICONO DE HAMBURGUESA -->
   </div>
+  
 
-  <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
     <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="tienda.html">
+                Tienda
+            </a>
+
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="categorias/lenceria.html">
+                        Lencería
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/accesorios_cabello.html">
+                        Accesorios para el cabello
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/cuidado_personal.html">
+                        Cuidado personal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/ecobags.html">
+                        Ecobags
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
     </ul>
 
-    <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+</nav>
+    </ul>
+
+</nav>
   </nav>
 
+
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+     
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
+
 </header>
+
 
 <!--SECCION DE CARRUSEL-->
 <section class="carousel"> 
   <div class="slides">
 
     <div class="slide"> <!--SLIDE 1-->
-      <img src="imagenes/carrusel/CARR1.png" alt="">
+      <img src="Imagenes/carrusel/CARR1.png" alt="">
       <div class="texto-carousel">
         <h1>Elegancia que enamora</h1>
         <p>Explora nuestra colección y encuentra piezas únicas.</p>
-       <a href="tienda.html" class="button">Comprar ahora</a>
+       <a href="tienda.html" class="btn-carrusel">Comprar ahora</a>
       </div>
     </div>
 
     <div class="slide"> <!--SLIDE 2-->
-      <img src="imagenes/carrusel/CARR2.png" alt="">
+      <img src="Imagenes/carrusel/CARR2.png" alt="">
       <div class="texto-carousel">
         <h1>Nueva colección</h1>
         <p>Diseños pensados para ti.</p>
-        <button class="button">Ver más</button>
+        <a href="tienda.html" class="btn-carrusel">
+          Ver más
+        </a>
       </div>
     </div>
 
     <div class="slide"> <!--SLIDE 3-->
-      <img src="imagenes/carrusel/CARR3.png" alt="">
+      <img src="Imagenes/carrusel/CARR3.png" alt="">
       <div class="texto-carousel"> 
         <h1>Hecho a mano, pensado para ti</h1>
         <p>Cada prenda es elaborada con dedicación y detalle, utilizando materiales suaves y resistentes que </p>
         <p>garantizan comodidad y una larga duración sin perder su encanto.</p>
-        <button class="button">Comprar ahora</button>
+        <a href="tienda.html" class="btn-carrusel">
+        Comprar ahora
+      </a>
       </div>
     </div>
 
     <div class="slide"> <!--SLIDE 4-->
-      <img src="imagenes/carrusel/CARR4.png" alt="">
+      <img src="Imagenes/carrusel/CARR4.png" alt="">
       <div class="texto-carousel">
-        <h1>Nueva colección</h1>
-        <p>Diseños pensados para ti.</p>
-        <button class="button">Ver más</button>
+        <h1>Comodidad y estilo</h1>
+        <p>Descubre una selección de piezas diseñadas para resaltar tu esencia, combinar comodidad y estilo, y acompañarte en cada momento especial.</p>
+        <a href="tienda.html" class="btn-carrusel">
+        Explorar novedades
+      </a>
       </div>
     </div>
 
@@ -106,29 +187,29 @@
   <div class="categorias">
 
     <div class="categoria">
-      <img src="imagenes/lenceria/lenceria.png" alt="Lencería">
-     <a href="lenceria.html" class="button">
+      <img src="Imagenes/lenceria/lenceria.png" alt="Lencería">
+     <a href="categorias/lenceria.html" class="button-categoria">
     Lencería
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/cabello/acesorios.png" alt="Accesorios para el cabello">
-      <a href="accesorios.html" class="button">
+      <img src="Imagenes/cabello/acesorios.png" alt="Accesorios para el cabello">
+      <a href="categorias/accesorios_cabello.html" class="button-categoria">
     Accesorios
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/cuidado-personal/desmaquillante.png" alt="Cuidado Personal">
-    <a href="cuidado_personal.html" class="button">
+      <img src="Imagenes/cuidado-personal/desmaquillante.png" alt="Cuidado Personal">
+    <a href="categorias/cuidado_personal.html" class="button-categoria">
     Cuidado Personal
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/ecobags/ecobags.png" alt="Ecobags">
-      <a href="ecobags.html" class="button"> 
+      <img src="Imagenes/ecobags/ecobags.png" alt="Ecobags">
+      <a href="categorias/ecobags.html" class="button-categoria"> 
     Ecobags
     </a>
     </div>
@@ -211,7 +292,7 @@
 
   <div class="redes">
 
-     <div class="redes-sociales">
+     <div class="redes-sociales-footer">
 
     <a href="#">
       <i class="bi bi-facebook"></i>
@@ -227,13 +308,11 @@
 
   </div>
 
-    <!-- <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-    <a href="#">TikTok</a> -->
+   
   </div>
 </footer>
 
-
+<script src="carrito.js"></script>
 <script src="js/script.js"></script>
 
 </body>

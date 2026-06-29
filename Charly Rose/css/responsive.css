@@ -1,147 +1,154 @@
-@media (max-width: 768px) {
+/* =========================
+RESPONSIVE
+========================= */
 
-  /* HEADER */
-  .header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
-    gap: 15px;
-  }
 
-  /* LOGO */
-  .logo img {
-    height: 50px;
-  }
+@media(max-width:1000px){
 
-  /* HAMBURGUESA */
-  .hamburguesa {
-    display: block;
-  }
 
-  /* MENÚ OCULTO */
-  .menu-container {
-    display: none;
-    width: 100%;
-    text-align: center;
-    background: rgba(0,0,0,0.9);
-    padding: 20px 0;
-  }
+.menu{
 
-  /* MENÚ ABIERTO */
-  .menu-container.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* MENÚ */
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-  }
-
-  .menu li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu a {
-    font-size: 27px;
-  }
-
-  /* BUSCADOR */
-  .search {
-    width: 80%;
-  }
-
-  /* CARRUSEL */
-  .slide img {
-    height: 450px;
-  }
-
-  /* TEXTO */
-  .texto-carousel {
-    width: 90%;
-  }
-
-  .texto-carousel h1 {
-    font-size: 90px;
-  }
-
-  .texto-carousel p {
-    font-size: 16px;
-  }
-
-  /* BOTÓN */
-  .button {
-    width: 70%;
-    font-size: 18px;
-  }
-
-  /* PRODUCTOS */
-  .productos h2 {
-    font-size: 30px;
-  }
-
-  .categoria {
-    width: 85%;
-  }
-
-  .categoria img {
-    height: 300px;
-  }
-
-  /* BENEFICIOS */
-  .beneficios {
-    grid-template-columns: 1fr;
-  }
-
-  /* VIDEO */
-  .video-box {
-    width: 100%;
-  }
-
-  .video-box iframe {
-    height: 250px;
-  }
-
-  /* ATELIER */
-  .atelier {
-    padding: 0 15px;
-  }
-
-  /* HERO TIENDA */
-.hero-tienda {
-  height: 300px;
-}
-
-.hero-tienda h1 {
-  font-size: 70px;
-}
-
-.hero-tienda p {
-  font-size: 16px;
-}
-}
-
-@media (max-width: 992px){
-
-    .catalogo{
-        grid-template-columns:1fr;
-    }
-
-    .productos-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+gap:20px;
 
 }
 
-@media (max-width:768px){
 
-    .productos-grid{
-        grid-template-columns:1fr;
-    }
+
+.catalogo{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.carrito{
+
+position:relative;
+
+}
+
+
+
+.beneficios{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.hero-tienda h1{
+
+font-size:80px;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+.header{
+
+padding:15px 20px;
+
+}
+
+
+
+.menu-container{
+
+display:none;
+
+}
+
+
+
+.hamburguesa{
+
+ display: block;
+} 
+
+
+
+
+h1{
+
+font-size:90px !important;
+
+}
+
+
+
+h2{
+
+font-size:40px !important;
+
+}
+
+
+
+.slide img{
+
+height:500px;
+
+}
+
+
+
+.texto-carousel h1{
+
+font-size:80px !important;
+
+}
+
+
+
+.texto-carousel p{
+
+font-size:18px;
+
+}
+
+
+
+.productos-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.beneficios{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.categorias-tienda{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+.hero-tienda h1{
+
+font-size:60px;
+
+}
+
+
 
 }

@@ -10,8 +10,8 @@
 
 
   <!-- ENLACES DE PAGINAS CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="./css/style.css" >
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <!-- ENLACE BOOTSTRAP-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -22,8 +22,11 @@
 
 </head> <!--FIN DEL ENCABEZADO -->
 
-<body>
-<header class="header">
+
+  <body>
+
+
+  <header class="header">
   <div class="logo">
      <img src="imagenes/a/logo.png" alt="Logo">
   </div>
@@ -31,32 +34,106 @@
   <div class="hamburguesa">
     ☰                <!-- ICONO DE HAMBURGUESA -->
   </div>
+  
 
-  <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
     <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="tienda.html">
+                Tienda
+            </a>
+
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="categorias/lenceria.html">
+                        Lencería
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/accesorios_cabello.html">
+                        Accesorios para el cabello
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/cuidado_personal.html">
+                        Cuidado personal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/ecobags.html">
+                        Ecobags
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
     </ul>
 
-    <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
-  </nav>
+</nav>
+    </ul>
+
+</nav>
+</nav>
+
+
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
 
 </header>
 
 
+
 <!-- TITULO -->
-<section class="hero-tienda">
 
-    <h1>Nuestra Tienda</h1>
-    <img src="imagenes/banner/banner-tienda.png" alt="Tienda">
+<div class="hero-tienda">
 
-    <p>
+    <img src="Imagenes/banner/banner-tienda.png" alt="Tienda">
+   <h1>Nuestra Tienda</h1>
+    <p class="texto-img">
         Descubre productos hechos con amor, calidad y atención a cada detalle.
     </p>
 
-</section>
+</div>
 
 <!-- CATEGORIAS -->
  <section class="productos">
@@ -67,29 +144,29 @@
   <div class="categorias">
 
     <div class="categoria">
-      <img src="imagenes/lenceria/lenceria.png" alt="Lencería">
-     <a href="lenceria.html" class="button">
+      <img src="Imagenes/lenceria/lenceria.png" alt="Lencería">
+     <a href="./categorias/lenceria.html" class="button-categoria">
     Lencería
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/cabello/acesorios.png" alt="Accesorios para el cabello">
-      <a href="accesorios.html" class="button">
+      <img src="Imagenes/cabello/acesorios.png" alt="Accesorios para el cabello">
+      <a href="./categorias/accesorios_cabello.html" class="button-categoria">
     Accesorios
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/cuidado-personal/desmaquillante.png" alt="Cuidado Personal">
-    <a href="cuidado_personal.html" class="button">
+      <img src="Imagenes/cuidado-personal/desmaquillante.png" alt="Cuidado Personal">
+    <a href="./categorias/cuidado_personal.html" class="button-categoria">
     Cuidado Personal
     </a>
     </div>
 
     <div class="categoria">
-      <img src="imagenes/ecobags/ecobags.png" alt="Ecobags">
-      <a href="ecobags.html" class="button"> 
+      <img src="Imagenes/ecobags/ecobags.png" alt="Ecobags">
+      <a href="./categorias/ecobags.html" class="button-categoria"> 
     Ecobags
     </a>
     </div>
@@ -107,45 +184,110 @@
     <div class="productos-grid">
 
         <div class="producto">
-            <img src="imagenes/lenceria/Conjunto2.png" alt="">
-            <h3>Conjunto Floral</h3>
-            <p>₡12.000</p>
-            <button>Ver producto</button>
-        </div>
+                <img src="./Imagenes/lenceria/calzon1.png" alt="Set de Panty Scrunchie">
+                <h3>Set de Panty Scrunchie</h3>
+                <p>₡16.000</p>
+                <a href="../productos/producto.html?id=1" class="button-categoria">
+            Ver producto
+        </a>
+        <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+     </div>
 
         <div class="producto">
-            <img src="imagenes/cuidado-personal/desmaquillante.png" alt="">
-            <h3>Set Skincare</h3>
-            <p>₡15.000</p>
-            <button>Ver producto</button>
-        </div>
+            <img src="Imagenes/cuidado-personal/desmaquillante.png" alt="">
+            <h3>Set Skincare Garden Love</h3>
+            <p class="precio">₡5.000</p>
+            <a href="productos/producto.html?id=14" class="button-categoria">
+            Ver producto
+           </a>
+            <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+    </div>
+    
+
+    <div class="producto">
+        <img src="Imagenes/ecobags/ecobagsmensaje.png.png" alt="">
+        <h3>Ecobag Ecoheart</h3>
+        <p class="precio">₡5.000</p>
+        <a href="productos/producto.html?id=24" class="button-categoria">
+        Ver producto
+        </a>
+         <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+ </div>
+
+    <div class="producto">
+                <img src="./Imagenes/cabello/scrunchies-encajes.png" alt="">
+                <h3>Scrunchies Old Money </h3>
+                <p>₡5.000</p>
+                <a href="../productos/producto.html?id=10" class="button-categoria">
+                Ver Producto
+                </a>
+                  <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+    </button>
+  </div>
 
         <div class="producto">
-            <img src="imagenes/ecobags/ecobagsmensaje.png.png" alt="">
-            <h3>Ecobag Natural</h3>
-            <p>₡7.500</p>
-            <button>Ver producto</button>
-        </div>
-
-        <div class="producto">
-            <img src="imagenes/cabello/scrunchies-encajes.png" alt="">
-            <h3>Scrunchie Old Money</h3>
-            <p>₡2.500</p>
-            <button>Ver producto</button>
-        </div>
-
-        <div class="producto">
-            <img src="imagenes/lenceria/set2sosten.png " alt="">
+            <img src="Imagenes/lenceria/set2sosten.png" alt="">
             <h3>Lencería Encaje</h3>
-            <p>₡14.000</p>
-            <button>Ver producto</button>
-        </div>
+            <p class="precio">₡5.000</p>
+            <a href="productos/producto.html?id=6" class="button-categoria">
+            Ver producto
+           </a>
+            <button class="btn-agregar">
+        <i class="bi bi-cart-plus"></i>
+        Agregar al carrito
+     </button>
+    </div>
 
       
 
     </div>
 
+<br><br><br>
+
+    <!-- CARRITO -->
+<div class="carrito">
+
+<h3>Carrito</h3>
+
+<div id="lista-carrito">
+    <p class="carrito-vacio">Tu carrito está vacío</p>
+</div>
+
+<hr>
+
+<p>
+    <strong>Subtotal:</strong> ₡<span id="subtotal">0</span>
+</p>
+
+<p>
+    <strong>IVA (13%):</strong> ₡<span id="iva">0</span>
+</p>
+
+<p>
+    <strong>Total:</strong> ₡<span id="total">0</span>
+</p>
+
+<button class="btn-finalizar">
+    Finalizar compra
+</button>
+
+</div>
+
+
 </section>
+
+<br><br><br>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -155,7 +297,7 @@
 
   <div class="redes">
 
-     <div class="redes-sociales">
+     <div class="redes-sociales-footer">
 
     <a href="#">
       <i class="bi bi-facebook"></i>
@@ -171,13 +313,11 @@
 
   </div>
 
-    <!-- <a href="#">Instagram</a>
-    <a href="#">Facebook</a>
-    <a href="#">TikTok</a> -->
-  </div>
 </footer>
-
+<script src="carrito.js"></script>
 <script src="js/script.js"></script>
+
+
 </body>
 
 </html>

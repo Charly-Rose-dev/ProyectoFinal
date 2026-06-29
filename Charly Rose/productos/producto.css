@@ -1,0 +1,500 @@
+
+
+html,
+body {i
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+/* HEADER */
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
+    background-color:rgba(0,0,0,0.6);
+}
+
+
+.acciones-header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.redes-encabezado {
+    display:flex;
+    padding: 10px;;
+}
+
+.redes-encabezado a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.redes-encabezado a:hover {
+  text-decoration: underline;
+}
+
+.redes-encabezado a {
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.redes-encabezado i {
+  font-size: 30px;
+  color: rgb(153, 151, 151);
+  transition: 0.3s;
+}
+
+.redes-encabezado i:hover {
+  color: rgb(214, 122, 122);
+  transform: scale(1.2);
+}
+
+/* HAMBURGUESA */
+.hamburguesa {
+  display: none;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  /* CONVIERTE EL CURSOR EN MANITA*/
+  z-index: 2000;
+  /* PARA QUE EL ELEMENTO QUEDE ENCIMA DE OTROS, EL NUMERO ALTO LO PONE DE PRIMERO */
+}
+
+/*  LOGO */
+.logo img {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 0 2px rgb(18, 8, 8));
+  /* CREA UN FILTRO DE SOMBRA ALREDOR DEL ELEMENTO*/
+}
+
+/* MENU */
+
+
+
+/* MENU */
+
+/* =========================
+MENU DESPLEGABLE TIENDA
+========================= */
+
+
+.menu-container{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-left:100px;
+
+}
+
+
+
+.menu{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:50px;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+.menu li{
+
+    position:relative;
+
+}
+
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#EDDDDD;
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+    position:relative;
+
+    text-shadow:0 0 20px #141010;
+
+}
+
+
+
+/* linea debajo del menu */
+
+.menu > li > a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0%;
+
+    height:4px;
+
+    background:#ECC1C1;
+
+    left:0;
+
+    bottom:-5px;
+
+    transition:.3s;
+
+}
+
+
+
+.menu > li > a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+/* =========================
+SUBMENU TIENDA
+========================= */
+
+
+.tienda-menu{
+
+    position:relative;
+
+}
+
+
+
+.submenu{
+
+    position:absolute;
+
+    top:35px;
+
+    left:0;
+
+
+    background:white;
+
+
+    width:240px;
+
+
+    padding:10px 0;
+
+
+    margin:0;
+
+
+    list-style:none;
+
+
+    border-radius:12px;
+
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+
+    opacity:0;
+
+    visibility:hidden;
+
+
+    transform:translateY(10px);
+
+
+    transition:.3s;
+
+
+    z-index:2000;
+
+}
+
+
+
+
+.tienda-menu:hover .submenu{
+
+
+    opacity:1;
+
+
+    visibility:visible;
+
+
+    transform:translateY(0);
+
+}
+
+
+
+/* opciones */
+
+.submenu li{
+
+    padding:12px 20px;
+
+}
+
+
+
+.submenu li a{
+
+
+    color:#1A1A1A;
+
+
+    font-size:16px;
+
+
+    letter-spacing:0;
+
+
+    text-shadow:none;
+
+
+    display:block;
+
+}
+
+
+
+/* quitar animacion de linea del submenu */
+
+.submenu li a::after{
+
+    display:none;
+
+}
+
+
+
+.submenu li:hover{
+
+    background:#F8F3EE;
+
+}
+
+
+/* BARRA DE BUSQUEDA */
+.search {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  backdrop-filter: blur(25px);
+  color: white;
+  outline: none;
+}
+
+.search:focus {
+  border-color: rgb(236, 193, 193);
+  background: transparent;
+  box-shadow: 0 0 30px rgb(236, 193, 193);
+}
+
+
+.search::placeholder {
+  color: white;
+}
+
+/* ==========================
+   CONTENEDOR GENERAL
+========================== */
+
+.producto-container{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+    display:flex;
+    gap:60px;
+}
+
+/* ==========================
+   IMAGEN
+========================== */
+
+.imagen-container{
+    flex:1;
+}
+
+.imagen-container img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+/* ==========================
+   INFORMACIÓN
+========================== */
+
+.info-container{
+    flex:1;
+}
+
+.info-container h1{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.categoria{
+    display:inline-block;
+    margin-bottom:15px;
+    font-size:0.9rem;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.precio{
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.descripcion{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+/* ==========================
+   TALLAS
+========================== */
+
+.tallas{
+    margin-bottom:30px;
+}
+
+.tallas h3{
+    margin-bottom:15px;
+}
+
+#tallasProducto{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+#tallasProducto button{
+    padding:10px 18px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+    border-radius:8px;
+    transition:.3s;
+}
+
+#tallasProducto button:hover{
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   BOTÓN
+========================== */
+
+.btn-comprar{
+    padding:15px 35px;
+    border:none;
+    cursor:pointer;
+    border-radius:10px;
+    font-size:1rem;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.975);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #f5e7e4;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* REDES SOCIALES */
+.redes-sociales-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.redes-sociales-footer a:hover {
+  text-decoration: underline;
+}
+
+.redes-sociales-footer i {
+  font-size: 30px;
+  color: rgb(153, 151, 151);
+  transition: 0.3s;
+}
+
+.redes-sociales-footer i:hover {
+  color: rgb(214, 122, 122);
+  transform: scale(1.2);
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .producto-container{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .info-container h1{
+        font-size:2rem;
+    }
+
+    .precio{
+        font-size:1.7rem;
+    }
+
+}
+

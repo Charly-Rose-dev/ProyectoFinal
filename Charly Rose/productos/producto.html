@@ -1,49 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
+<head> <!--ENCABEZADO DE LA PAGINA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del Producto</title>
+  <!-- FUENTES A UTILIZAR -->
 
-    <link rel="stylesheet" href="producto.css">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+
+
+  
+
+  <!-- ENLACES DE PAGINAS CSS -->
+  <link rel="stylesheet" href="producto.css">
+
+  <!-- ENLACE BOOTSTRAP-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+   <!-- ICONOS DE BOOTSTRAP -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head> <!--FIN DEL ENCABEZADO -->
+
+
 
 <body>
+    
+<header class="header">
+  <div class="logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
+  </div>
 
-    <main class="producto-container">
+  <div class="hamburguesa">
+    ☰                <!-- ICONO DE HAMBURGUESA -->
+  </div>
+  
 
-        <div class="imagen-container">
-            <img id="imagenProducto" src="" alt="Producto">
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+    <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="../home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="../tienda.html">
+                Tienda
+            </a>
+
+
+                <ul class="submenu">
+
+        <li>
+        <a href="../categorias/lenceria.html">Lencería</a>
+        </li>
+
+        <li>
+        <a href="../categorias/accesorios_cabello.html">
+            Accesorios para el cabello
+        </a>
+        </li>
+
+        <li>
+        <a href="../categorias/cuidado_personal.html">
+            Cuidado personal
+        </a>
+        </li>
+
+        <li>
+        <a href="../categorias/ecobags.html">Ecobags</a>
+        </li>
+
+        </ul>
+
+        </li>
+
+
+        <li>
+            <a href="../contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
+    </ul>
+
+</nav>
+    </ul>
+
+</nav>
+  </nav>
+
+
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
+
+</header>
+
+<br><br><br><br>
+
+<main class="producto-container">
+
+    <div class="imagen-container">
+        <img id="imagenProducto" src="" alt="Producto">
+    </div>
+
+    <div class="info-container">
+
+        <p id="categoriaProducto"></p>
+
+        <h1 id="nombreProducto"></h1>
+
+        <p class="precio" id="precioProducto"></p>
+
+        <p class="descripcion" id="descripcionProducto"></p>
+
+        <div class="tallas">
+            <h3>Tallas disponibles</h3>
+
+            <div id="tallasProducto"></div>
         </div>
 
-        <div class="info-container">
+        <button class="btn-comprar">
+            Agregar al carrito
+        </button>
 
-            <h1 id="nombreProducto"></h1>
+    </div>
 
-            <p class="precio" id="precioProducto"></p>
+</main>
 
-            <p class="descripcion" id="descripcionProducto"></p>
 
-            <div class="tallas">
-                <h3>Tallas disponibles</h3>
+<footer class="footer">
+  <p>© CharlyRose - Todos los derechos reservados</p>
+  <p>Correo: charlyentonorosa@gmail.com</p>
+  <p>Teléfono: +506 6082-6635</p>
 
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
-                <button>XL</button>
-            </div>
+  <div class="redes">
 
-            <button class="btn-comprar">
-                Agregar al carrito
-            </button>
+     <div class="redes-sociales-footer">
 
-        </div>
+    <a href="#">
+      <i class="bi bi-facebook"></i>
+    </a>
 
-    </main>
+    <a href="#">
+      <i class="bi bi-instagram"></i>
+    </a>
 
-    <script src="producto.js"></script>
+    <a href="#">
+      <i class="bi bi-tiktok"></i>
+    </a>
+
+  </div>
+
+   
+  </div>
+</footer>
+
+<script src="../carrito.js"></script>
+<script src="producto.js"></script>
 
 </body>
-
 </html>

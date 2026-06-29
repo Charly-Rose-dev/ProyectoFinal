@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto | Charly Rose</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- FUENTES A UTILIZAR -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Federo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+
+
+<!-- ENLACES DE PAGINAS CSS -->
+<link rel="stylesheet" href="./css/style.css" >
+<link rel="stylesheet" href="./css/responsive.css">
+
+<!-- ICONOS DE BOOTSTRAP -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<style>
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F5F1EA;
+    margin:0;
+}
+
+/* HERO */
+
+.hero-contacto{
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+
+.hero-contacto img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-contacto::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-contenido{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    z-index:2;
+}
+
+.hero-contenido h1{
+    font-family:'Federo',sans-serif;
+    font-size:80px;
+}
+
+.hero-contenido p{
+    font-size:22px;
+}
+
+/* FORMULARIO */
+
+.contacto{
+    padding:80px 20px;
+}
+
+.contacto-card{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.contacto h2{
+    color:#1A1A1A;
+    margin-bottom:30px;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:12px;
+    border:2px solid #E8D8C3;
+}
+
+.form-control:focus{
+    border-color:#D48686;
+    box-shadow:0 0 10px rgba(212,134,134,.25);
+}
+
+.btn-charly{
+    background:#D48686;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-charly:hover{
+    background:#1A1A1A;
+    color:white;
+}
+
+/* INFO */
+
+.info-contacto{
+    background:#1A1A1A;
+    color:white;
+    border-radius:25px;
+    padding:40px;
+    height:100%;
+}
+
+.info-contacto h3{
+    color:#D48686;
+    margin-bottom:20px;
+}
+
+.info-contacto p{
+    margin-bottom:15px;
+}
+
+/* MAPA */
+
+.mapa{
+    margin-top:60px;
+}
+
+.mapa h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1A1A1A;
+}
+
+iframe{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+
+.footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+}
+
+</style>
+
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+     <img src="imagenes/a/logo.png" alt="Logo">
+  </div>
+
+  <div class="hamburguesa">
+    ☰                <!-- ICONO DE HAMBURGUESA -->
+  </div>
+  
+
+ <nav class="menu-container">  <!-- CONTENEDOR DEL MENU DE NAVEGACION -->
+    <ul class="menu">           <!-- LISTA DE ENLACES DEL MENU -->
+      <nav class="menu-container">  
+
+    <ul class="menu">
+
+        <nav class="menu-container">
+
+    <ul class="menu">
+
+        <li>
+            <a href="home.html">Inicio</a>
+        </li>
+
+
+        <li class="tienda-menu">
+
+            <a href="tienda.html">
+                Tienda
+            </a>
+
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="categorias/lenceria.html">
+                        Lencería
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/accesorios_cabello.html">
+                        Accesorios para el cabello
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/cuidado_personal.html">
+                        Cuidado personal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categorias/ecobags.html">
+                        Ecobags
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+
+
+        <li>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+
+
+    </ul>
+
+</nav>
+    </ul>
+
+</nav>
+  </nav>
+
+
+    <div class="acciones-header">
+      <input type="text" placeholder="Buscar..." class="search">  <!--BARRA DE BUSQUEDA-->
+
+      <div class="redes-encabezado">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i> </a>
+
+      </div>
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero-contacto">
+
+    <img src="Imagenes/banner/banner-tienda.png" alt="Contacto">
+
+    <div class="hero-contenido">
+        <h1>Contáctanos</h1>
+        <p>Estamos para ayudarte 💖</p>
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contacto">
+
+<div class="container">
+
+<div class="row g-4">
+
+    <!-- FORMULARIO -->
+
+    <div class="col-lg-8">
+
+        <div class="contacto-card">
+
+            <h2>Envíanos un mensaje</h2>
+
+            <form>
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Asunto</label>
+                    <input type="text" class="form-control" placeholder="¿En qué podemos ayudarte?">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-charly">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- INFORMACIÓN -->
+
+    <div class="col-lg-4">
+
+        <div class="info-contacto">
+
+            <h3>Charly Rose</h3>
+
+            <p>
+                ✨ Moda femenina, lencería y accesorios elaborados con amor.
+            </p>
+
+            <p>
+                📍 Alajuela Centro, Costa Rica
+            </p>
+
+            <p>
+                📞 +506 8888-8888
+            </p>
+
+            <p>
+                📧 contacto@charlyrose.com
+            </p>
+
+            <p>
+                🕒 Lunes a Sábado<br>
+                9:00 a.m. - 6:00 p.m.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MAPA -->
+
+<div class="mapa">
+
+    <h2>Ubicación</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=Alajuela+Centro,+Costa+Rica&output=embed"
+        width="100%"
+        height="450"
+        loading="lazy"
+        allowfullscreen="">
+    </iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© CharlyRose - Todos los derechos reservados</p>
+  <p>Correo: charlyentonorosa@gmail.com</p>
+  <p>Teléfono: +506 6082-6635</p>
+
+  <div class="redes">
+
+     <div class="redes-sociales-footer">
+
+    <a href="#">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="bi bi-tiktok"></i>
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
