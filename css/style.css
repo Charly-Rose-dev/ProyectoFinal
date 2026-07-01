@@ -945,6 +945,70 @@ transform:scale(1.2);
 
 }
 
+/* ===== ACCESIBILIDAD ===== */
+
+.accesibilidad{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
+}
+
+#toggleAccesibilidad{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#ff69b4;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+.panel-accesibilidad{
+    display:none;
+    margin-bottom:10px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+    width:180px;          /* Ancho del panel */
+}
+
+.panel-accesibilidad button{
+    display:block;
+    width:100%;
+    margin:8px 0;
+    padding:12px;
+    border:none;
+    background:#ff69b4;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;       /* Solo la letra de los botones */
+}
+
+.panel-accesibilidad button:hover{
+    background:#e754a2;
+}
+
+body.altoContraste{
+    background:black !important;
+    color:white !important;
+}
+
+body.altoContraste a{
+    color:yellow !important;
+}
+
+body.altoContraste header,
+body.altoContraste footer,
+body.altoContraste nav{
+    background:#111 !important;
+}
+
 
 
 

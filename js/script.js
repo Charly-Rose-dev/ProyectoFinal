@@ -349,6 +349,68 @@ function actualizarTotales() {
             formatoCRC.format(Math.round(total));
     }
 
+
 document.addEventListener("DOMContentLoaded", initMenu);
 
 }
+
+// ===== ACCESIBILIDAD =====
+
+const panel = document.getElementById("panelAccesibilidad");
+const btn = document.getElementById("toggleAccesibilidad");
+
+let tamaño = 1;
+
+btn.onclick = () => {
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+};
+
+
+document.getElementById("aumentar").onclick = () => {
+
+    tamaño += 0.1;
+
+    document.querySelectorAll(
+        "p, a, li, h1, h2, h3, h4, h5, h6, span, button"
+    ).forEach(elemento => {
+
+        let actual = window.getComputedStyle(elemento).fontSize;
+
+        elemento.style.fontSize =
+        (parseFloat(actual) * 1.1) + "px";
+
+    });
+
+};
+
+
+document.getElementById("disminuir").onclick = () => {
+
+    document.querySelectorAll(
+        "p, a, li, h1, h2, h3, h4, h5, h6, span, button"
+    ).forEach(elemento => {
+
+        let actual = window.getComputedStyle(elemento).fontSize;
+
+        elemento.style.fontSize =
+        (parseFloat(actual) * 0.9) + "px";
+
+    });
+
+};
+
+
+document.getElementById("contraste").onclick = () => {
+    document.body.classList.toggle("altoContraste");
+};
+
+
+document.getElementById("restablecer").onclick = () => {
+
+    document.querySelectorAll("*").forEach(elemento => {
+        elemento.style.fontSize = "";
+    });
+
+    document.body.classList.remove("altoContraste");
+
+};

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charly-rose-dev.github.io/ProyectoFinal/sitemap.xml
