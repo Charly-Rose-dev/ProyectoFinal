@@ -208,7 +208,7 @@ padding:12px 20px;
 
 .submenu li a{
 color:#f5afaf;
-font-size:16px;
+font-size:17px;
 letter-spacing:0;
 text-shadow:none;
 display:block;
@@ -222,7 +222,7 @@ display:none; /*OCULTA COMPLETAMENTE EL ELEMENTO Y EL ESPACIO QUE TIENE EN LA PA
 }
 
 .submenu li:hover{
-background:#f1edd9;
+background:#050505;
 
 }
 
