@@ -113,6 +113,13 @@ margin-left:100px;
 
 }
 
+@media (max-width:700px){
+    .menu-container{
+        margin-left:0;
+        flex:none;
+    }
+}
+
 .menu{
 list-style:none; /*SIN VIÑETAS DE LISTA*/
 display:flex;
@@ -200,7 +207,7 @@ padding:12px 20px;
 }
 
 .submenu li a{
-color:#1A1A1A;
+color:#f5afaf;
 font-size:16px;
 letter-spacing:0;
 text-shadow:none;
@@ -215,13 +222,15 @@ display:none; /*OCULTA COMPLETAMENTE EL ELEMENTO Y EL ESPACIO QUE TIENE EN LA PA
 }
 
 .submenu li:hover{
-background:#F8F3EE;
+background:#f1edd9;
 
 }
 
 /* Oculto por defecto */
 .hamburguesa {
     display: none;
+    color: white;
+    font-size: 30px;
 }
 
 
