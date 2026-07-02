@@ -1,13 +1,13 @@
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
-// ✅ PRODUCTOS
+
 const productos = {
      1: {
         nombre: "Set de Panty Scrunchie",
         categoria: "Lencería",
         precio: "₡12.000",
-        imagen: "../imagenes/lenceria/Calzon1.png",
+        imagen: "Imagenes/lenceria/Calzon1.png",
         descripcion: "Set de panty tipo scrunchie, comodo y coqueto.",
         tallas: ["S", "M", "L"]
     },
@@ -16,7 +16,7 @@ const productos = {
         nombre: "Set de Panty Encaje",
         categoria: "Lencería",
         precio: "₡18.000",
-        imagen: "../imagenes/lenceria/calzon2.png",
+        imagen: "Imagenes/lenceria/calzon2.png",
         descripcion: "Set de panty, estampado de flored veraniegas, bordado en scrunchie: elegancia, picardia y comodidad.",
         tallas: ["S", "M", "L"]
     },
@@ -25,7 +25,7 @@ const productos = {
         nombre: "Conjunto Romance",
         categoria: "Lenceria",
         precio: "₡16.500",
-        imagen: "../imagenes/lenceria/calzon4.png",
+        imagen: "Imagenes/lenceria/calzon4.png",
         descripcion: "Hermoso conjunto de lencería, inspirado en el romance y el amor. Elaborado a partir de fibras de algodón.",
         tallas: ["S", "M", "L"]
     },
@@ -34,7 +34,7 @@ const productos = {
         nombre: "Conjunto Elegance",
         categoria: "Lenceria",
         precio: "₡15.000",
-        imagen: "../imagenes/lenceria/Conjunto1.png",
+        imagen: "Imagenes/lenceria/Conjunto1.png",
         descripcion: "Conjunto en colores blancos y rosas, delicado y armonioso. Descubre la elegancia con este conjunto.",
         tallas: ["S", "M", "L"]
     },
@@ -43,7 +43,7 @@ const productos = {
         nombre: "Conjunto Rosé",
         categoria: "Lenceria",
         precio: "₡17.000",
-        imagen: "../imagenes/lenceria/Conjunto2.png",
+        imagen: "Imagenes/lenceria/Conjunto2.png",
         descripcion: "Descubre tu feminidad con este femenino, delicado y silvestre conjunto en color rosa.",
         tallas: ["S", "M", "L"]
 
@@ -53,7 +53,7 @@ const productos = {
        nombre: "Set Deluxe",
        categoria: "Lenceria",
        precio: "₡17.000",
-       imagen: "../imagenes/lenceria/set2sosten.png",
+       imagen: "Imagenes/lenceria/set2sosten.png",
        descripcion: "Set de sostenes elegantes y hermosos ",
        tallas: ["34B", "36B", "38B"]
      },
@@ -62,7 +62,7 @@ const productos = {
       nombre: "Bralett Corsét",
       categoria: "Lenceria",
       precio: "₡16.000",
-      imagen: "../imagenes/lenceria/bralettcorsett.png",
+      imagen: "Imagenes/lenceria/bralettcorsett.png",
       descripcion: "Set .",
       tallas:  ["S", "M", "L"]
      },
@@ -71,7 +71,7 @@ const productos = {
      nombre: "Conjunto Love Luxury",
      categoria: "Lenceria",
      precio: "₡18.000",
-     imagen: "../imagenes/lenceria/Conjunto4.png",
+     imagen: "Imagenes/lenceria/Conjunto4.png",
      descripcion: "Conjunto de lenceria de encaje negro, con estampado de corazones rojos, suave al tacto y visualmente coqueto y elegante.",
      tallas:  ["S", "M", "L"]
     },
@@ -80,7 +80,7 @@ const productos = {
      nombre: "Conjunto Red Bloom",
      categoria: "Lenceria",
      precio: "₡20.000",
-     imagen: "../imagenes/lenceria/setjuvenil5.png",
+     imagen: "Imagenes/lenceria/setjuvenil5.png",
      descripcion: "Precioso conjunto de encaje rojo.",
      tallas:  ["S", "M", "L"]
     },
@@ -91,7 +91,7 @@ const productos = {
         nombre: "Set Scrunchies",
         categoria: "Accesorios para Cabello",
         precio: "₡5.000",
-        imagen: "../imagenes/cabello/acesorios.png",
+        imagen: "Imagenes/cabello/acesorios.png",
         descripcion: "Set de 6 scrunchies grandes y 6 pequeños en colres lavanda, celeste cielo, azul y rosa palo.  .",
         // tallas: ["S", "M", "L"]
     },
@@ -100,7 +100,7 @@ const productos = {
         nombre: "Set Bandoleras",
         categoria: "Accesorios para el Cabello ",
         precio: "₡6.000",
-        imagen: "../imagenes/cabello/banda1.png",
+        imagen: "Imagenes/cabello/banda1.png",
         descripcion: "Set de panty tipo scrunchie, comodo y coqueto.",
         // tallas: ["S", "M", "L"]
     },
@@ -109,7 +109,7 @@ const productos = {
         nombre: "Set Gold Heart",
         categoria: "Accesorios para Cabello",
         precio: "₡3.500",
-        imagen: "../Imagenes/cabello/banda2.png",
+        imagen: "Imagenes/cabello/banda2.png",
         descripcion: "Hermosa Bandolera que proteje tu cabello gracias a sus fibras de seda.",
         // tallas: ["S", "M", "L"]
     },
@@ -118,7 +118,7 @@ const productos = {
         nombre: "Set Bandoleras Gold",
         categoria: "Accesorios para Cabello",
         precio: "₡9.500",
-        imagen: "../imagenes/cabello/banda3.png",
+        imagen: "Imagenes/cabello/banda3.png",
         descripcion: "Set de 3 hermosas bandoleras, confeccionadas en fibras de seda para el cuidado de tu cabello, diseño inspirado en minirales de la tierra.",
         // tallas: ["S", "M", "L"]
     },
@@ -127,7 +127,7 @@ const productos = {
         nombre: "Bandolera Sea White",
         categoria: "Accesorios para el Cabello",
         precio: "₡4.000",
-        imagen: "../imagenes/cabello/pañuelo1.png",
+        imagen: "Imagenes/cabello/pañuelo1.png",
         descripcion: "Pañuelo en encaje blanco, hermoso y elegante. Inspirado en la Espuma del mar ¡Luce Fabulosa!",
         // tallas: ["S", "M", "L"]
     },
@@ -136,7 +136,7 @@ const productos = {
         nombre: "Scrunchie Escolar",
         categoria: "Accesorios para el Cabello",
         precio: "₡2.000",
-        imagen: "../imagenes/cabello/scrunchie.png",
+        imagen: "Imagenes/cabello/scrunchie.png",
         descripcion: "Scrunchie comodo y coqueto, ideal para combinar con tu uniforme escolar.",
         // tallas: ["S", "M", "L"]
     },
@@ -145,7 +145,7 @@ const productos = {
         nombre: "Conjunto Scrunchies Mystic",
         categoria: "Accesorios para el Cabello",
         precio: "₡5.000",
-        imagen: "../imagenes/cabello/scrunchies-encajes.png",
+        imagen: "Imagenes/cabello/scrunchies-encajes.png",
         descripcion: "Coqueto y elegante set de scrunchies en delicado encaje. En colores blanco y negro",
         // tallas: ["S", "M", "L"]
     },
@@ -154,7 +154,7 @@ const productos = {
         nombre: "Toallitas Desmaquillantes",
         categoria: "Cuidado Personal",
         precio: "₡3.800",
-        imagen: "../imagenes/cuidado-personal/desmaquillante.png",
+        imagen: "Imagenes/cuidado-personal/desmaquillante.png",
         descripcion: "Toallitas desmaquillantes en algodon, 7 unidades.",
         // tallas: ["S", "M", "L"]
     },
@@ -163,7 +163,7 @@ const productos = {
         nombre: "Set Skincare Wild Roses",
         categoria: "Cuidado Personal",
         precio: "₡4.000",
-        imagen: "../imagenes/cuidado-personal/Desmasquillantes1.png",
+        imagen: "Imagenes/cuidado-personal/Desmasquillantes1.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
     },    
@@ -172,7 +172,7 @@ const productos = {
         nombre: "Set Skincare Romance",
         categoria: "Cuidado Personal",
         precio: "₡5.000",
-        imagen: "../imagenes/cuidado-personal/setcuidado1.png",
+        imagen: "Imagenes/cuidado-personal/setcuidado1.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },    
@@ -180,7 +180,7 @@ const productos = {
         nombre: "Set Skincare Garden Love",
         categoria: "Cuidado Personal",
         precio: "₡4.000",
-        imagen: "../imagenes/cuidado-personal/setcuidado2.png",
+        imagen: "Imagenes/cuidado-personal/setcuidado2.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },    
@@ -188,7 +188,7 @@ const productos = {
         nombre: "Set Skincare Roses and Trees",
         categoria: "Cuidado Personal",
         precio: "₡4.000",
-        imagen: "../imagenes/cuidado-personal/setcuidado3.png",
+        imagen: "Imagenes/cuidado-personal/setcuidado3.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },   
@@ -196,7 +196,7 @@ const productos = {
         nombre: "Set Skincare Blue Flowers",
         categoria: "Cuidado Personal",
         precio: "₡4.000",
-        imagen: "../imagenes/cuidado-personal/setcuidado4.png",
+        imagen: "Imagenes/cuidado-personal/setcuidado4.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },    
@@ -204,7 +204,7 @@ const productos = {
         nombre: "Ecobag Floral",
         categoria: "Ecobags",
         precio: "₡4.000",
-        imagen: "../imagenes/ecobags/ecobags.png",
+        imagen: "Imagenes/ecobags/ecobags.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },    
@@ -212,7 +212,7 @@ const productos = {
         nombre: "Ecobag Ecoheart",
         categoria: "Ecobags",
         precio: "₡4.000",
-        imagen: "../imagenes/ecobags/ecobagsmensaje.png.png",
+        imagen: "Imagenes/ecobags/ecobagsmensaje.png.png",
         descripcion: "Set de toallitas desmaquillantes, banda para el cabello y bolsita organizadora.",
         // tallas: ["S", "M", "L"]
 },     
